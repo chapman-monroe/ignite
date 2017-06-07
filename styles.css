@@ -1,12 +1,76 @@
-
-
 body{
   display: block;
   margin: 0;
+  padding: 0;
   font-family: 'GothamBold';
   color: white;
 }
-
+.navbar {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: black;
+	background-color: rgba(7, 12, 16, 0.85);
+	position: fixed;
+	z-index: 20;
+}
+li {
+	float: right;
+}
+.logo {
+	width: 85px;
+	background-image: url("hcvlogo.png");
+	background-size: cover;
+	height: 85px;
+	margin-left: 14%;
+	position: absolute;
+	margin-top: 6px;
+	cursor: pointer;
+	z-index: 21;
+	transition: all 0.13s ease-in-out;
+}
+.logo:hover {
+	transform: scale(1.05);
+}
+button {
+	margin: 14px 0;
+	position: relative;
+	font-family: 'GothamBold';
+	border: none;
+	font-size: 20px;
+	padding: 14px 55px 14px 0;
+	background-color: transparent;
+	transition: all 0.13s ease-in-out;
+}
+button:focus {
+	outline: 0;
+}
+.applybtn {
+	background-color: #3187C8;
+	border-radius: 20px;
+	margin: 20px 15px 20px 0;
+	padding: 9px 35px;
+	transition: all 0.13s ease-in-out;
+}
+.applybtn:hover .text {
+	color: white;
+}
+.applybtn:hover {
+	background-color: #2277AA;
+	cursor: pointer;
+}
+.tabs {
+	display: inline-block;
+}
+.text {
+	color: white;
+	cursor: pointer;
+	transition: color 0.1s ease-in-out;
+}
+.text:hover  {
+	color: #609BDF;
+}
 .home{
   background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
   background-repeat: no-repeat;
@@ -42,12 +106,12 @@ body{
 
 .hero-title{
   color: white;
-  padding-top: 30%;
+  padding-top: 200px;
   z-index: 10;
 }
 
 .strong{
-  color: #1E73BE;
+  color: #0098DB;
   font-size: 72px;
   text-transform: uppercase;
 }
@@ -56,11 +120,10 @@ h3{
   font-family: 'GothamLight';
   padding-top: 20px;
   line-height: 30px;
+  font-size: 17px;
 }
-
-a{
-  text-decoration: none;
-  color: white;
+.applyref {
+	text-decoration: none;
 }
 .apply-button{
   background-color: #1E73BE;
@@ -70,6 +133,7 @@ a{
   border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  color: white;
 }
 
 .apply-button:hover{
@@ -293,13 +357,12 @@ a{
   min-height: 1px;
   padding-left: 20px;
   vertical-align: top; }
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     .grid__col {
-      display: block;
       margin-left: 0;
       margin-right: 0;
       width: auto; } }
-  @media (max-width: 700px) and (min-width: 480px) {
+  @media (max-width: 900px) and (min-width: 480px) {
     .grid__col[class*="grid__col--m-"] {
       display: inline-block;
       margin-right: -.24em; }
@@ -353,20 +416,36 @@ a{
 
 .grid__col--am {
   vertical-align: middle; }
-
-/*# sourceMappingURL=grid.css.map */
-
-@font-face {
-  font-family: 'GothamBold';
-  src: url('fonts/GothamBold.eot');
-  src: url('fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/GothamBold.woff') format('woff'),
-    url('fonts/GothamBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+.dropdown {
+	display: none;
+}
+.instrSect {
+	width: 100%;
+	background: linear-gradient(to left, #345673, #0E1C27);
+	height: 800px;
+	position: relative;
+}
+.adampic {
+	position: absolute;
+	background-image: url('adampic.png');
+	background-size: cover;
+	width: 282px;
+	height: 282px;
+	border-radius: 50%;
+	border: 2px dotted #111E6C;
+	top: 30px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
 }
 
 
+/* font faces & media queries */
+
+@font-face {
+	font-family: 'GothamBold';
+	src: url('fonts/GothamBold.woff') format('woff');
+}
 @font-face {
   font-family: 'GothamLight';
   src: url('fonts/GothamLight.eot');
@@ -376,5 +455,66 @@ a{
   font-weight: 300;
   font-style: normal;
 }
-
-
+@font-face {
+  font-family: 'GothamBold';
+  src: url('fonts/GothamBold.eot');
+  src: url('fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/GothamBold.woff') format('woff'),
+    url('fonts/GothamBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@media screen and (max-width: 900px) {
+	h1, h3 {
+		text-align: center;
+	}
+	.tabs {
+		display: none;
+	}
+	.dropdown {
+		float: right;
+		display: block;
+	}
+	.dropbtn {
+		margin-right: 40%;
+		width: 30px;
+		height: 30px;
+		float: right;
+		filter: invert(100%);
+		background-image: url("draglist.png");
+		background-size: cover;
+		padding: 0;
+	}
+	.content {
+		top: 58px;
+		position: absolute;
+		right: 0;
+		display: none;
+		background-color: #001C27;
+		min-width: 160px;
+		box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+		transition: all 0.13s ease-in-out;
+		z-index: 101;
+	}
+	.content a {
+		border: 1px solid #444444;
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		font-size: 18px;
+		text-align: right;
+	}
+	.content a:hover {
+		background-color: #333333;
+	}
+	.dropdown:hover .content {
+		display: block;
+	}
+	.logo {
+		margin-top: -9px;
+		width: 53px;
+		height: 53px;
+	}
+}
