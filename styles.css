@@ -163,11 +163,18 @@ h4{
   margin: 0;
 }
 
-.grid__col{
-  padding-left: 0px;
+.alumni{
+  background-color: #0E2038;
 }
 
+.row-alumni-img{
+  width: 200px;
+  margin: 0 auto;
+}
 
+p{
+  font-family: "GothamLight";
+}
 
 /* the css from toast */
 
