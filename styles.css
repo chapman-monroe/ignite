@@ -96,7 +96,7 @@ a{
   height: 200px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 90% 200px;
+  background-size: 100% 200px;
   margin: 20px auto;
   position: relative;
 }
@@ -104,11 +104,11 @@ a{
 .logo{
   width: 50%;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 
 }
 
 span.text-content {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.8);
   color: white;
   cursor: pointer;
   display: table;
@@ -116,9 +116,8 @@ span.text-content {
   left: 0;
   position: absolute;
   top: 0;
-  width: 90%;
+  width: 100%;
   opacity: 0;
-  margin-left: 19px;
 }
 
 span.text-content span {
@@ -126,6 +125,7 @@ span.text-content span {
   text-align: center;
   vertical-align: middle;
   font-family: "GothamLight";
+  margin: 0 auto;
 }
 
 .row-image:hover span.text-content{
@@ -133,27 +133,27 @@ span.text-content span {
 }
 
 .one-a{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
+  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/Screen-Shot-2017-01-28-at-1.27.01-PM.jpg");
 }
 
 .two-a{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
+  background-image: url("images/se-logo.png");
 }
 
 .three-a{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
+  background-image: url("images/ind-init.jpg");
 }
 
 .one-b{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
+  background-image: url("images/impact-team.jpg");
 }
 
 .two-b{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
+  background-image: url("images/events.jpg");
 }
 
 .three-b{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
+  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/10003683_864300296919646_33495604_o-e1410400040213.jpg");
 }
 
 .row-caption{
@@ -162,6 +162,12 @@ span.text-content span {
 h4{
   margin: 0;
 }
+
+.grid__col{
+  padding-left: 0px;
+}
+
+
 
 /* the css from toast */
 
@@ -456,6 +462,37 @@ h4{
     url('fonts/GothamLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+}
+
+
+
+
+@media (max-width: 840px){
+  .row-image{
+    background-size: 90% 100px;
+  }
+}
+
+@media (max-width: 700px){
+  
+
+  .row-image{
+    background-size: 100% 500px;
+    position: relative;
+  }
+
+  span.text-content {
+    position: absolute;
+    height: 200px;
+    opacity: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .row-caption{
+    display: none;
+  }
 }
 
 
