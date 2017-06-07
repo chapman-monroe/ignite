@@ -1,12 +1,67 @@
-
-
 body{
   display: block;
   margin: 0;
+  padding: 0;
   font-family: 'GothamBold';
   color: white;
 }
-
+ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: black;
+	background-color: #070C10;
+	position: fixed;
+	z-index: 20;
+}
+li {
+	float: right;
+}
+.logo {
+	width: 90px;
+	background-image: url("hcvlogo.png");
+	background-size: cover;
+	height: 90px;
+	margin-left: 230px;
+	position: absolute;
+	margin-top: 4px;
+	cursor: pointer;
+	z-index: 21;
+}
+button {
+	margin: 14px 0;
+	position: relative;
+	font-family: 'GothamBold';
+	border: none;
+	font-size: 20px;
+	padding: 14px 40px;
+	background-color: transparent;
+}
+.applybtn {
+	background-color: #3187C8;
+	border-radius: 20px;
+	margin: 20px 0;
+	padding: 9px 35px;
+}
+.applybtn:hover .text {
+	color: white;
+}
+.applybtn:hover {
+	background-color: #2277AA;
+	cursor: pointer;
+}
+.tabs {
+	display: inline-block;
+	margin-right: 13px;
+}
+.text {
+	color: white;
+	cursor: pointer;
+}
+.text:hover  {
+	color: #609BDF;
+}
 .home{
   background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
   background-repeat: no-repeat;
@@ -347,20 +402,10 @@ a{
 
 .grid__col--am {
   vertical-align: middle; }
-
-/*# sourceMappingURL=grid.css.map */
-
 @font-face {
-  font-family: 'GothamBold';
-  src: url('fonts/GothamBold.eot');
-  src: url('fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/GothamBold.woff') format('woff'),
-    url('fonts/GothamBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+	font-family: 'GothamBold';
+	src: url('fonts/GothamBold.woff') format('woff');
 }
-
-
 @font-face {
   font-family: 'GothamLight';
   src: url('fonts/GothamLight.eot');
@@ -370,5 +415,12 @@ a{
   font-weight: 300;
   font-style: normal;
 }
-
-
+@font-face {
+  font-family: 'GothamBold';
+  src: url('fonts/GothamBold.eot');
+  src: url('fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/GothamBold.woff') format('woff'),
+    url('fonts/GothamBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
