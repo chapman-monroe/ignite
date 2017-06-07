@@ -1,3 +1,83 @@
+
+
+body{
+  display: block;
+  margin: 0;
+  font-family: 'GothamBold';
+  color: white;
+}
+
+.home{
+  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.overlay{
+  background-color: rgba(0,0,0, .6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+
+.title-main{
+  height: 100vh;
+  z-index: 10;
+}
+
+.hero-title{
+  color: white;
+  padding-top: 30%;
+  z-index: 10;
+}
+
+.strong{
+  color: #1E73BE;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+h3{
+  font-family: 'GothamLight';
+  padding-top: 20px;
+  line-height: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.apply-button{
+  background-color: #1E73BE;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.apply-button:hover{
+  background-color: white;
+  color: #1E73BE;
+}
+/* the css from toast */
+
 .grid {
   list-style: none;
   margin-left: -20px; }
@@ -269,3 +349,26 @@
   vertical-align: middle; }
 
 /*# sourceMappingURL=grid.css.map */
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url('fonts/GothamBold.eot');
+  src: url('fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/GothamBold.woff') format('woff'),
+    url('fonts/GothamBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'GothamLight';
+  src: url('fonts/GothamLight.eot');
+  src: url('fonts/GothamLight.eot?#iefix') format('embedded-opentype'),
+    url('fonts/GothamLight.woff') format('woff'),
+    url('fonts/GothamLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
