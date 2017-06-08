@@ -260,6 +260,7 @@ a{
   width: 400px;
   text-align: center;
   position: relative;
+  margin: 0 auto;
 }
 
 .alumni-image{
@@ -285,6 +286,15 @@ a{
 
 .alumni-link{
   color: #1E73BE;
+}
+
+.alum-face{
+  border-radius: 100%;
+  width: 150px;
+}
+
+.alum-name{
+  padding-top: 50px;
 }
 
 /* Code from Toast Below DO NOT TOUCH */
@@ -699,13 +709,18 @@ a{
   .row-caption{
     display: none;
   }
+
+  .alumni-image{
+    width: 100%;
+    padding-top: 30px;
+    border: none;
+  }
 }
 
 
 
 @media (max-width: 700px){
   
-
   .row-image{
     background-size: 100% 500px;
     position: relative;
@@ -726,4 +741,26 @@ a{
 }
 
 
+@media (max-width: 585px){
+  .alumni-face{
+    width: 100%;
+    text-align: center;
+  }
+
+  .alumni-name{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 470px){
+  .carousel{
+    width: 90%;
+  }
+
+  .row-alumni-img{
+    width: 100%;
+  }
+
+}
 
