@@ -234,8 +234,14 @@ h4{
   width: 400px;
 }
 
+.row-alumni-img-two{
+  width: 400px;
+}
+
+
 .alumni-image{
   text-align: center;
+  margin-bottom: 35px;
 }
 
 p{
@@ -717,7 +723,19 @@ a{
   }
 }
 
+.membership-perks{
+  background-color: #3187C8;
+}
 
+.icon-holder{
+  text-align: center;
+}
+
+@media (max-width: 900px){
+  .icon-holder{
+    width: 100%;
+  }
+}
 
 @media (max-width: 700px){
   
@@ -762,5 +780,10 @@ a{
     width: 100%;
   }
 
+  .row-alumni-img-two{
+    width: 100%;
+  }
+
 }
+
 

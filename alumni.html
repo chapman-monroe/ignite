@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HackCville's Ignite Program</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script>
 		$(document).ready(function(){       
 			$(window).on("scroll",function(){
@@ -84,7 +84,7 @@
 						<h1 class="alum-name">Stephanie Peckic</h1>
 					</div>
 					<span class="strong"><a class= "alumni-link" href="https://www.facebook.com/thejarexchange/"><h3>The Jar Exchange &#8594;</h3></a></span>	
-					<p>The Jar Exchange is a local business that makes smoothies as a cheap, clean, and easy alternative to your typical lunch or snack! 
+					<p>The Jar Exchange is a local business that makes smoothies as a cheap, clean, and easy alternative to your typical lunch or snack! This was Steph's individual initiative that she launched while in the Ignite Program 
 					</p>	
 				</div>
 				<div class="grid__col grid__col--1-of-2 alumni-image">
@@ -118,7 +118,93 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="row-alumni">
+				
+				<div class="grid__col grid__col--1-of-2 row-item">
+
+					<div class="grid__col grid__col--5-of-12 alumni-face">
+						<img class="alum-face" src="images/jade.jpg"/>
+					</div>
+					
+					<div class="grid__col grid__col--7-of-12 alumni-name">
+						<h1 class="alum-name">Jade James</h1>
+					</div>
+
+					<span class="strong"><a class= "alumni-link" href="https://www.facebook.com/jadeyj827/photos?lst=100001454958829%3A100000302411468%3A1496944642&source_ref=pb_friends_tl"><h3>Jade's FaceBook &#8594;</h3></a></span>	
+					<p>I don't know what Jade's personal project was but she is friends with Margaret so for the purpose of today I'm putting her face in here!
+					</p>	
+				</div>
+
+				<div class="grid__col grid__col--1-of-2 alumni-image">
+					<div class="carousel">
+						<img class="row-alumni-img-two" src="images/jar-exchange.jpg"/>
+						<img class="row-alumni-img-two" src="images/jar-exchange-2.jpg"/>
+						<img class="row-alumni-img-two" src="images/jar-exchange-3.jpg"/>
+
+						<button class="left-button slide-button" onclick="plusDivsTwo(-1)">&#10094;</button>
+  						<button class="right-button slide-button" onclick="plusDivsTwo(1)">&#10095;</button>
+
+						<script>
+							var slideIndexTwo = 1;
+							showDivsTwo(slideIndexTwo);
+
+							function plusDivsTwo(n) {
+							  showDivsTwo(slideIndexTwo += n);
+							}
+
+							function showDivsTwo(n) {
+							  var i;
+							  var x = document.getElementsByClassName("row-alumni-img-two");
+							  if (n > x.length) {slideIndexTwo = 1}    
+							  if (n < 1) {slideIndexTwo = x.length}
+							  for (i = 0; i < x.length; i++) {
+							     x[i].style.display = "none";  
+							  }
+							  x[slideIndexTwo-1].style.display = "block";  
+							}
+						</script>
+					</div>
+				</div>
+			</div>
+		
 		</div>
+	</div>
+
+
+	<div class="membership-perks">
+		<div class="container">
+			<div class="grid__col grid__col--3-of-5 grid__col--centered">
+				<h1 class="curriculum-title">Perks of HackCville Membership</h1>
+			</div>
+
+			<div class="grid__col grid__col--1-of-4 icon-holder">
+				<i class="fa fa-home" aria-hidden="true" style="font-size: 72px;"></i>
+				<p>
+					24/7 access to our fun and functional clubhouses on Elliewood Ave
+				</p>
+			</div>
+			<div class="grid__col grid__col--1-of-4 icon-holder">
+				<i class="fa fa-briefcase" aria-hidden="true" style="font-size: 72px;"></i>
+				<p>
+					Exclusive events and job opportunities.
+				</p>
+			</div>
+			<div class="grid__col grid__col--1-of-4 icon-holder">
+				<i class="fa fa-gratipay" aria-hidden="true" style="font-size: 72px;"></i>
+				<p>
+					A community that feels like family.
+				</p>
+			</div>
+			<div class="grid__col grid__col--1-of-4 icon-holder">
+				<i class="fa fa-key" aria-hidden="true" style="font-size: 72px;"></i>
+				<p>
+					Early access to HackCville programs, no application required.
+				</p>
+			</div>
+
+		</div>
+		
 	</div>
 
 </body>
