@@ -775,12 +775,21 @@ a{
   }
 }
 
+.apply{
+  height: 100vh;
+}
+
 .membership-perks{
   background-color: #3187C8;
 }
 
 .icon-holder{
   text-align: center;
+}
+
+.apply-link{
+  text-align: left;
+  font-size: 45px;
 }
 
 @media (max-width: 900px){
