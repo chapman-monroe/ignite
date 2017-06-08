@@ -4,69 +4,20 @@
 	<meta charset="UTF-8" />
 	<link rel='stylesheet' href='styles.css' type='text/css' />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HackCville's Ignite Program</title>
+	<title>Outcomes Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script>
-		$(document).ready(function(){       
-			$(window).on("scroll",function(){
-  				var wn = $(window).scrollTop();
-    			if(wn > 45){
-    				if($(window).width() <= 900) {
-    					$(".logo").css("width", "40px");
-    					$(".logo").css("height", "40px");
-    					$(".logo").css("margin-top", "4px");
-    					$(".dropbtn").css("width", "20px");
-    					$(".dropbtn").css("height", "20px");
-    					$(".dropbtn").css("padding", "0");
-    					$(".dropbtn").css("margin-right", "40%");
-    					$(".content").css("top", "49px");
-    				}
-    				else {
-	    				$(".logo").css("width", "48px");
-	    				$(".logo").css("height", "48px");
-	    				$(".logo").css("margin-top", "3px");
-	    				$("button").css("font-size", "15px");
-	    				$("button").css("padding", "8px 55px 8px 0");
-	    				$("button").css("margin", "5px 0");
-	    				$(".applybtn").css("padding", "7px 20px");
-	    				$(".applybtn").css("margin", "6px 10px 0px 0");
-    				}
-   				}
-   				else{
-   					if($(window).width() <= 900) {
-    					$(".logo").css("width", "53px");
-    					$(".logo").css("height", "53px");
-    					$(".logo").css("margin-top", "3px");
-    					$(".dropbtn").css("width", "30px");
-    					$(".dropbtn").css("height", "30px");
-    					$(".dropbtn").css("padding", "0");
-    					$(".dropbtn").css("margin-right", "40%");
-    					$(".content").css("top", "58px");
-    				}
-    				else {
-	    				$(".logo").css("width","85px");
-	    				$(".logo").css("height","85px");
-	    				$(".logo").css("margin-top", "6px");
-	    				$("button").css("font-size", "20px");
-	    				$("button").css("padding", "14px 55px 14px 0");
-	    				$("button").css("margin", "14px 0");
-	    				$(".applybtn").css("padding", "9px 35px");
-	    				$(".applybtn").css("margin", "20px 15px 20px 0");
- 					}
-    			}
-      		});
-		});
-
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="animations.js"></script>
 </head>
 <body>
 	<ul class="navbar">
 		<li style="float: left"><a href="#" class="logo"></a></li>
 		<li class="tabs"><button class="applybtn"><span class="text">APPLY</span></button></li>
-		<li class="tabs"><button><span class="text">OUTCOME</span></button></li>
-		<li class="tabs"><button><span class="text">EVENTS</span></button></li>
-		<li class="tabs"><button><span class="text">OVERVIEW</span></button></li>
+		<li class="tabs"><button class="navbuttons"><span class="text">OUTCOME</span></button></li>
+		<li class="tabs"><button class="navbuttons"><span class="text">EVENTS</span></button></li>
+		<li class="tabs"><button class="navbuttons"><span class="text">OVERVIEW</span></button></li>
 		<li class="dropdown"><button class="dropbtn"></button><div class="content"><a href="#">OVERVIEW</a><a href="#">EVENTS</a><a href="#">OUTCOME</a><a href="#">APPLY</a></div></li>
 	</ul>
 

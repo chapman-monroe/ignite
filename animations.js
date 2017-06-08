@@ -16,11 +16,13 @@ $(document).ready(function(){
 	    				$(".logo").css("width", "48px");
 	    				$(".logo").css("height", "48px");
 	    				$(".logo").css("margin-top", "3px");
-	    				$("button").css("font-size", "15px");
-	    				$("button").css("padding", "8px 55px 8px 0");
-	    				$("button").css("margin", "5px 0");
+	    				$(".navbuttons").css("font-size", "15px");
+	    				$(".navbuttons").css("padding", "8px 55px 8px 0");
+	    				$(".navbuttons").css("margin", "5px 0");
+                        $(".applybtn").css("font-size", "15px");
 	    				$(".applybtn").css("padding", "7px 20px");
-	    				$(".applybtn").css("margin", "6px 10px 0px 0");
+	    				$(".applybtn").css("margin", "6px 10px 3px 0");
+                        $(".text").css("font-size", "15px");
     				}
                     if(wn > 1100) {
                         $(".adam").css("opacity", "1");
@@ -56,11 +58,12 @@ $(document).ready(function(){
 	    				$(".logo").css("width","85px");
 	    				$(".logo").css("height","85px");
 	    				$(".logo").css("margin-top", "6px");
-	    				$("button").css("font-size", "20px");
-	    				$("button").css("padding", "14px 55px 14px 0");
-	    				$("button").css("margin", "14px 0");
+	    				$(".navbuttons").css("font-size", "20px");
+	    				$(".navbuttons").css("padding", "14px 55px 14px 0");
+	    				$(".navbuttons").css("margin", "14px 0");
 	    				$(".applybtn").css("padding", "9px 35px");
 	    				$(".applybtn").css("margin", "20px 15px 20px 0");
+                        $(".text").css("font-size", "20px");
  					}
     			}
       		});
