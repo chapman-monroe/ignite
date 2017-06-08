@@ -168,6 +168,7 @@ h3{
   position: relative;
 }
 
+
 span.text-content {
   background: rgba(0,0,0,0.8);
   color: white;
@@ -217,8 +218,6 @@ span.text-content span {
   background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/10003683_864300296919646_33495604_o-e1410400040213.jpg");
 }
 
-.row-caption{
-}
 
 h4{
   margin: 0;
@@ -228,9 +227,15 @@ h4{
   background-color: #0E2038;
 }
 
+.row-alumni{
+  padding-top: 20px;
+}
 .row-alumni-img{
-  width: 200px;
-  margin: 0 auto;
+  width: 400px;
+}
+
+.alumni-image{
+  text-align: center;
 }
 
 p{
@@ -242,8 +247,57 @@ a{
   color: white;
 }
 
+.alumni-title{
+  padding-top: 80px;
+}
 
-/* the css from toast */
+.row-item{
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+.carousel{
+  width: 400px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.alumni-image{
+  border-left: solid #1E73BE 3px;
+}
+
+.slide-button{
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 100px;
+  padding: 10px;
+  background-color: rgba(0,0,0,.8);
+}
+
+.left-button{
+  left: 0;
+}
+
+.right-button{
+  right: 0;
+}
+
+.alumni-link{
+  color: #1E73BE;
+}
+
+.alum-face{
+  border-radius: 100%;
+  width: 150px;
+}
+
+.alum-name{
+  padding-top: 50px;
+}
+
+/* Code from Toast Below DO NOT TOUCH */
 
 .grid {
   list-style: none;
@@ -513,6 +567,9 @@ a{
 
 .grid__col--am {
   vertical-align: middle; }
+
+/* code from Toast above DO NOT TOUCH*/
+
 .dropdown {
 	display: none;
 }
@@ -697,18 +754,25 @@ a{
 		width: 53px;
 		height: 53px;
 	}
-}
 
-
-@media (max-width: 840px){
   .row-image{
-    background-size: 90% 100px;
+    display: block;
+  }
+  .row-caption{
+    display: none;
+  }
+
+  .alumni-image{
+    width: 100%;
+    padding-top: 30px;
+    border: none;
   }
 }
 
+
+
 @media (max-width: 700px){
   
-
   .row-image{
     background-size: 100% 500px;
     position: relative;
@@ -729,4 +793,26 @@ a{
 }
 
 
+@media (max-width: 585px){
+  .alumni-face{
+    width: 100%;
+    text-align: center;
+  }
+
+  .alumni-name{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 470px){
+  .carousel{
+    width: 90%;
+  }
+
+  .row-alumni-img{
+    width: 100%;
+  }
+
+}
 
