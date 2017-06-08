@@ -243,6 +243,11 @@ p{
   font-family: "GothamLight";
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 
 /* the css from toast */
 
