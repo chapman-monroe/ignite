@@ -847,12 +847,27 @@ a{
   }
 }
 
+.apply{
+  height: 100vh;
+}
+
 .membership-perks{
   background-color: #3187C8;
 }
 
 .icon-holder{
   text-align: center;
+}
+
+.apply-link{
+  text-align: left;
+  font-size: 40px;
+  margin:34px auto;
+}
+
+.blue-link{
+  text-transform: uppercase;
+  color: #3187C8;
 }
 
 @media (max-width: 900px){
@@ -892,6 +907,12 @@ a{
   .alumni-name{
     text-align: center;
     width: 100%;
+  }
+}
+
+@media (max-width: 499px){
+  .apply{
+    height: auto;
   }
 }
 
