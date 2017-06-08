@@ -25,12 +25,20 @@ $(document).ready(function(){
                     if(wn > 1100) {
                         $(".adam").css("opacity", "1");
                         $(".adam").css("transform", "translate(-50%, 0) scale(1)");
+                        $(".adamTitle").css("opacity", "1");
+                        $(".adamTitle").css("transform", "translate(-50%, 0) scale(1)");
                     }
                     if(wn > 1200) {
                         $(".kim").css("opacity", "1");
-                        $(".kim").css("transform", "translate(-73%, 0) scale(1)");
+                        $(".kim").css("transform", "scale(1)");
+                        $(".kimTitle").css("opacity", "1");
+                        $(".kimTitle").css("transform", "scale(1)");
                         $(".kendall").css("opacity", "1");
-                        $(".kendall").css("transform", "translate(-27%, 0) scale(1)");
+                        $(".kendall").css("transform", "scale(1)");
+                        $(".kendallTitle").css("opacity", "1");
+                        $(".kendallTitle").css("transform", "scale(1)");
+                        $(".instrHeading").css("opacity", "1");
+                        $(".instrHeading").css("transform", "translate(-50%, 0) scale(1)");
                     }
    				}
    				else{
