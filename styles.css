@@ -81,11 +81,14 @@ h1{
   background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
+}
+
+.hero{
 }
 
 .overlay{
@@ -188,6 +191,8 @@ span.text-content span {
   vertical-align: middle;
   font-family: "GothamLight";
   margin: 0 auto;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .row-image:hover span.text-content{
@@ -215,7 +220,7 @@ span.text-content span {
 }
 
 .three-b{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/10003683_864300296919646_33495604_o-e1410400040213.jpg");
+  background-image: url("images/hot-date-new.jpg");
 }
 
 
@@ -301,6 +306,10 @@ a{
 
 .alum-name{
   padding-top: 50px;
+}
+
+.events{
+  padding-bottom: 50px;
 }
 
 /* Code from Toast Below DO NOT TOUCH */
@@ -884,6 +893,15 @@ iframe{
   .icon-holder{
     width: 100%;
   }
+
+  .row-image{
+    background-size: 80% 500px;
+  }
+
+  .apply-button{
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 700px){
@@ -924,6 +942,10 @@ iframe{
   .apply{
     height: auto;
   }
+
+  .apply-button{
+    width: 100%;
+  }
 }
 
 @media (max-width: 470px){
@@ -938,6 +960,34 @@ iframe{
   .row-alumni-img-two{
     width: 100%;
   }
+
+}
+
+@media (max-width: 410px;){
+  .curriculum{
+    padding-top: 20px;
+  }
+}
+
+
+@media (max-width: 380px){
+
+  .hero-title{
+    padding-top: 75px;
+  }
+
+  .title-main{
+    height: 90vh;
+  }
+
+  .strong{
+    font-size: 65px;
+  }
+
+  .curriculum{
+    padding-top: 40px;
+  }
+
 
 }
 

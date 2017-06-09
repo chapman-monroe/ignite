@@ -1,5 +1,11 @@
 $(document).ready(function(){       
-			$(window).on("scroll",function(){
+		$(".one-a").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".instrSect").offset().top},
+        'slow');
+        });
+
+            $(window).on("scroll",function(){
   				var wn = $(window).scrollTop();
     			if(wn > 45){
     				if($(window).width() <= 900) {
@@ -68,3 +74,4 @@ $(document).ready(function(){
     			}
       		});
 		});
+
