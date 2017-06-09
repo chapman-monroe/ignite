@@ -224,7 +224,7 @@ h4{
 }
 
 .alumni{
-  background-color: #0E2038;
+  background: linear-gradient(to left, #345673 , #0E1C27 );
 }
 
 .row-alumni{
@@ -868,6 +868,16 @@ a{
 .blue-link{
   text-transform: uppercase;
   color: #3187C8;
+}
+
+.calendar{
+  text-align: center;
+}
+
+
+
+iframe{
+  width: 90%;
 }
 
 @media (max-width: 900px){
