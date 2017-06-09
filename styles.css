@@ -303,6 +303,29 @@ a{
   padding-top: 50px;
 }
 
+.apply{
+  height: 100vh;
+}
+
+.membership-perks{
+  background-color: #3187C8;
+}
+
+.icon-holder{
+  text-align: center;
+}
+
+.apply-link{
+  text-align: left;
+  font-size: 40px;
+  margin:34px auto;
+}
+
+.blue-link{
+  text-transform: uppercase;
+  color: #3187C8;
+}
+
 /* Code from Toast Below DO NOT TOUCH */
 
 .grid {
@@ -601,7 +624,7 @@ a{
 	margin-right: -50%;
 	transform: translate(-50%, 0) scale(0);
 	opacity: 0;
-	transition: all 0.33s ease;
+	transition: transform 0.33s ease;
 }
 .kim {
 	background-image: url('kimpic.jpg');
@@ -642,7 +665,7 @@ a{
 .kimTitle {
 	top: 582px;
 	float: left;
-	left: 20.2%;
+	left: 20%;
 	transform: scale(0);
 	opacity: 0;
 	transition: all 0.3s ease;
@@ -684,6 +707,7 @@ a{
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, 0);
+	transition-delay: 0.2s;
 }
 .kimDesc {
 	top: 115px;
@@ -692,48 +716,66 @@ a{
 	height: 205px;
 	float: left;
 	left: 16.5%;
+	transition-delay: 0.2s;
 }
 .kendallDesc {
-	top: 40px;
+	top: 115px;
 	border: 1px solid white;
-	width: 330px;
-	height: 220px;
+	width: 250px;
+	height: 205px;
 	float: right;
-	right: 18%;
+	right: 16.7%;
+	transition-delay: 0.2s;
 }
 .adam:hover {
 	transform: translate(-50%, 0) scale(1.08) !important;
 }
-.kim:hover {
-	transform: scale(1.08) !important;
-}
-.kendall:hover {
-	transform: scale(1.08) !important;
-}
 .adam:hover ~ .adamDesc {
 	opacity: 0.98;
 	top: 372px;
+	transition-delay: 0s;
+}
+.adam:hover ~ .adamTitle {
+	top: 303px !important;
+	color: #CFF1F4 !important;
+	transform: translate(-50%, 0) scale(1.05) !important;
+}
+/*.adamDesc:hover {
+	opacity: 0.98;
+	top: 372px;
+	transition-delay: 0s;
+}*/
+.kim:hover {
+	transform: scale(1.08) !important;
 }
 .kim:hover ~ .kimDesc {
 	opacity: 0.98;
 	top: 90px;
 }
+.kim:hover ~ .kimTitle {
+	color: #CFF1F4 !important;
+	transform: scale(1.05) !important;
+}
+.kimDesc:hover {
+	opacity: 0.98;
+	top: 90px;
+	transition-delay: 0s;
+}
+.kendall:hover {
+	transform: scale(1.08) !important;
+}
 .kendall:hover ~ .kendallDesc {
 	opacity: 0.98;
-	top: 30px;
-}
-.adam:hover ~ .adamTitle {
-	top: 303px;
-	color: #CFF1F4;
-	transform: translate(-50%, 0) scale(1.05) !important;
-}
-.kim:hover ~ .kimTitle {
-	color: #CFF1F4;
-	transform: scale(1.05) !important;
+	top: 90px;
 }
 .kendall:hover ~ .kendallTitle {
 	color: #CFF1F4;
 	transform: scale(1.05) !important;
+}
+.kendallDesc:hover {
+	opacity: 0.98;
+	top: 90px;
+	transition-delay: 0s;
 }
 .title {
 	font-weight: bold;
@@ -743,7 +785,27 @@ a{
 	font-weight: bold;
 	font-size: 20px;
 }
-
+.footer {
+	background-color: #BFBDBD;
+	height: 370px;
+	color: black;
+}
+.footLeft {
+	padding: 20px;
+	border-right: 1px solid black;
+	height: 370px;
+}
+.footRight {
+	padding: 20px;
+}
+.nlHeader {
+	font-size: 30px;
+}
+input:focus {
+	border: solid 1px #707070;
+	box-shadow: 0 0 5px 1px #969696;
+	outline: 0;
+}
 
 
 /* font faces & media queries */
@@ -847,29 +909,6 @@ a{
   }
 }
 
-.apply{
-  height: 100vh;
-}
-
-.membership-perks{
-  background-color: #3187C8;
-}
-
-.icon-holder{
-  text-align: center;
-}
-
-.apply-link{
-  text-align: left;
-  font-size: 40px;
-  margin:34px auto;
-}
-
-.blue-link{
-  text-transform: uppercase;
-  color: #3187C8;
-}
-
 @media (max-width: 900px){
   .icon-holder{
     width: 100%;
@@ -877,7 +916,6 @@ a{
 }
 
 @media (max-width: 700px){
-  
   .row-image{
     background-size: 100% 500px;
     position: relative;
@@ -930,5 +968,96 @@ a{
   }
 
 }
-
-
+@media (max-width: 1400px) {
+	.instrSect {
+		height: 825px;
+	}
+	.instrHeading {
+		top: 15px;
+		margin: 0;
+	}
+	.adam {
+		top: 200px;
+	}
+	.adamTitle {
+		top: 473px;
+	}
+	.adamDesc {
+		top: 495px;
+		width: 250px;
+	}
+	.kim {
+		left: 13.5%;
+		top: 235px;
+	}
+	.kimTitle {
+		top: 455px;
+		left: 16.2%;
+	}
+	.kimDesc {
+		left: 13.2%;
+		top: 457px;
+		width: 220px;
+	}
+	.kendall {
+		right: 13.5%;
+		top: 235px;
+	}
+	.kendallTitle {
+		top: 455px;
+		right: 14.2%;
+	}
+	.kendallDesc {
+		right: 12.7%;
+		top: 457px;
+		width: 220px;
+	}
+	.adam:hover ~ .adamTitle {
+		top: 476px !important;
+		color: #CFF1F4 !important;
+		transform: translate(-50%, 0) scale(1.05) !important;
+	}
+	.adam:hover ~ .adamDesc {
+		opacity: 0.98;
+		top: 553px;
+		transition-delay: 0s;
+	}
+	.adamDesc:hover {
+		opacity: 0.98;
+		top: 553px;
+		transition-delay: 0s;
+		transform: translate(-50%, 0) scale(1.03);
+	}
+	.kim:hover ~ .kimTitle {
+		top: 455px !important;
+		color: #CFF1F4 !important;
+		transform: scale(1.05) !important;
+	}
+	.kim:hover ~ .kimDesc {
+		opacity: 0.98;
+		top: 530px;
+		transition-delay: 0s;
+	}
+	.kimDesc:hover {
+		opacity: 0.98;
+		top: 530px;
+		transition-delay: 0s;
+		transform: scale(1.03);
+	}
+	.kendall:hover ~ .kendallTitle {
+		top: 455px !important;
+		color: #CFF1F4 !important;
+		transform: scale(1.05) !important;
+	}
+	.kendall:hover ~ .kendallDesc {
+		opacity: 0.98;
+		top: 530px;
+		transition-delay: 0s;
+	}
+	.kendallDesc:hover {
+		opacity: 0.98;
+		top: 530px;
+		transition-delay: 0s;
+		transform: scale(1.03);
+	}
+}
