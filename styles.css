@@ -81,17 +81,20 @@ h1{
   background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 600px;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
 }
 
+.hero{
+}
+
 .overlay{
   background-color: rgba(0,0,0, .6);
   position: absolute;
-  height: 100%;
+  height: 600px;
   width: 100%;
   left: 0;
   top: 0;
@@ -106,7 +109,7 @@ h1{
 }
 
 .title-main{
-  height: 100vh;
+  height: 600px;
   z-index: 10;
 }
 
@@ -188,6 +191,8 @@ span.text-content span {
   vertical-align: middle;
   font-family: "GothamLight";
   margin: 0 auto;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .row-image:hover span.text-content{
@@ -215,7 +220,7 @@ span.text-content span {
 }
 
 .three-b{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/10003683_864300296919646_33495604_o-e1410400040213.jpg");
+  background-image: url("images/hot-date-new.jpg");
 }
 
 
@@ -324,6 +329,10 @@ a{
 .blue-link{
   text-transform: uppercase;
   color: #3187C8;
+}
+.events{
+  padding-bottom: 50px;
+
 }
 
 /* Code from Toast Below DO NOT TOUCH */
@@ -808,6 +817,10 @@ input:focus {
 }
 
 
+.calendar{
+  text-align: center;
+}
+
 /* font faces & media queries */
 
 @font-face {
@@ -913,6 +926,15 @@ input:focus {
   .icon-holder{
     width: 100%;
   }
+
+  .row-image{
+    background-size: 80% 500px;
+  }
+
+  .apply-button{
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 700px){
@@ -952,6 +974,10 @@ input:focus {
   .apply{
     height: auto;
   }
+
+  .apply-button{
+    width: 100%;
+  }
 }
 
 @media (max-width: 470px){
@@ -968,6 +994,7 @@ input:focus {
   }
 
 }
+
 @media (max-width: 1400px) {
 	.instrSect {
 		height: 825px;
@@ -1061,3 +1088,35 @@ input:focus {
 		transform: scale(1.03);
 	}
 }
+
+
+@media (max-width: 410px;){
+  .curriculum{
+    padding-top: 20px;
+  }
+}
+
+
+@media (max-width: 380px){
+
+  .hero-title{
+    padding-top: 75px;
+  }
+
+  .title-main{
+    height: 90vh;
+  }
+
+  .strong{
+    font-size: 65px;
+  }
+
+  .curriculum{
+    padding-top: 40px;
+  }
+
+
+}
+
+
+>>>>>>> edits
