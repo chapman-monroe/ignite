@@ -693,6 +693,7 @@ a{
 	font-family: 'ChunkFive';
 	font-size: 27px;
 	color: #A1CAF1;
+	letter-spacing: 1px;
 }
 .adamTitle {
 	top: 300px;
@@ -832,16 +833,16 @@ a{
 	font-family: 'GothamLight';
 }
 .footLeft {
-	padding: 20px;
+	padding: 15px 20px 0 20px;
 	border-right: 1px solid black;
 	height: 370px;
 }
 .footRight {
-	padding: 20px;
+	padding: 15px 20px 0 20px;
 	position: relative;
 }
-.nlHeader {
-	font-size: 32px;
+.rHeader {
+	font-size: 30px;
 }
 .jointext {
 	font-family: "GothamBold";
@@ -858,63 +859,104 @@ input:focus {
 	background-size: cover;
 	width: 170px;
 	height: 170px;
-	transform: translate(0, 28px);
+	transform: translate(0, 25px);
 	left: 7%;
 }
-form {
+.lform {
 	position: relative;
-	width: 40%;
-	left: 62%;
-	margin-right: 50%;
+	width: 400px;
+	left: 50%;
 	transform: translate(-50%, 0);
-	margin-top: -10px;
+	margin-top: 12px;
+}
+.rform {
+	position: relative;
+	width: 300px;
+	left: 65%;
+	transform: translate(-50%, 0);
+	margin-top: -5px;
 }
 .otherProgButton {
 	border-radius: 15px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color: #6666FF;
-	font-family: 'GothamLight';
-	margin: 0;
+	color: #42B4E6;
+	font-family: 'GothamBook';
+	margin: 10px 0 0 0;
 	padding: 0;
-	width: 150px;
-	height: 50px;
-	background: #6666FF;
-	border: 1px solid #6666FF;
+	width: 140px;
+	height: 40px;
+	background: #42B4E6;
+	border: 1px solid #42B4E6;
 	color: #FFF;
 	overflow: hidden;
-	transition: all 0.5s;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+.centered {
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 .check {
-	-webkit-mask-box-image: url("checkmark.png");
-/*	background-image: url("checkmark.png");
-*/	background-size: cover;
-	top: 47%;
+	background-image: url("checkmark.png");
+	background-size: cover;
+	top: 3px;
 	transform: translate(0, -50%);
-	right: 7%;
+	right: 5%;
 	position: absolute;
 	width: 25px;
 	height: 25px;
 	opacity: 0;
-	transition: all 0.5s;
+	transition: all 0.5s ease;
+	filter: invert(100%);
+}
+.check1 {
+	background-image: url("checkmark.png");
+	background-size: cover;
+	top: 3px;
+	transform: translate(0, -50%);
+	right: 4%;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+	transition: all 0.5s ease;
+	filter: invert(100%);
 }
 
 .otherProgButton:hover {
-  color: #6666FF;
-  border-color: #6666FF;
-  background: #FFF;
+  color: #3187C8;
+  border-color: #3187C8;
+  background: #C7E2EF;
 }
 .otherProgButton:hover .check {
-  filter: invert(0%);
-  opacity: 1;
+	filter: invert(0%);
+/*  -webkit-filter: brightness(50%) sepia(1) hue-rotate(168deg) saturate(63.5%) brightness(88%);
+*/  opacity: 1;
+  top: 47%;
 }
-
+.otherProgButton:hover .check1 {
+	filter: invert(0%);
+/*  -webkit-filter: brightness(50%) sepia(1) hue-rotate(168deg) saturate(63.5%) brightness(88%);
+*/  opacity: 1;
+  top: 47%;
+}
 .submitText {
   transition: padding-right 0.5s;
 }
+.submitText1 {
+	letter-spacing: 1px;
+	position: absolute;
+  transition: padding-right 0.5s;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+}
 
 .otherProgButton:hover .submitText {
-  padding-right: 17%;
+  padding-right: 16.5%;
+}
+.otherProgButton:hover .submitText1 {
+  padding-right: 15.7%;
 }
 
 .input__field {
@@ -927,7 +969,22 @@ form {
 	border: none;
 	border-radius: 0;
 	background: #F0F0F0;
-	color: #aaa;
+	font-size: 105%;
+	font-weight: bold;
+	appearance: none;
+	font-family: 'GothamLight';
+}
+.input__field1 {
+	text-align: center;
+	margin-top: -5px;
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #F0F0F0;
 	font-size: 105%;
 	font-weight: bold;
 	appearance: none;
@@ -942,7 +999,6 @@ form {
 	font-weight: bold;
 	font-size: 80%;
 	-webkit-font-smoothing: antialiased;
-	-webkit-touch-callout: none;
 	user-select: none;
 }
 .input__field--isao {
@@ -950,10 +1006,10 @@ form {
 	padding: 0.75em 0.1em 0.25em;
 	width: 100%;
 	background: transparent;
-	color: #00006D;
+	color: #262352;
 }
 
-.input__label--isao {
+.input__label--isao, .input__label--isao1 {
 	position: relative;
 	overflow: hidden;
 	padding: 0;
@@ -962,7 +1018,7 @@ form {
 	text-align: left;
 }	
 
-.input__label--isao::before {
+.input__label--isao::before, .input__label--isao1::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -988,13 +1044,26 @@ form {
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	pointer-events: none;
 }
+.input__label--isao1::after {
+	content: attr(data-content);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	padding: 0.75em 0.15em;
+	color: #3187C8;
+	opacity: 0;
+	transform: translate3d(-50%, 50%, 0);
+	transition: opacity 0.3s, transform 0.3s;
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	pointer-events: none;
+}
 
-.input__field--isao:focus + .input__label--isao::before {
+.input__field--isao:focus + .input__label--isao::before, .input__field--isao:focus + .input__label--isao1::before {
 	background-color: #3187C8;
 	transform: scale3d(1, 1, 1);
 }
 
-.input__field--isao:focus + .input__label--isao {
+.input__field--isao:focus + .input__label--isao, .input__field--isao:focus + .input__label--isao1 {
 	pointer-events: none;
 }
 
@@ -1002,7 +1071,18 @@ form {
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
 }
+.input__field--isao:focus + .input__label--isao1::after {
+	opacity: 1;
+	transform: translate3d(-50%, 0, 0);
+}
 .input__label-content {
+	position: relative;
+	display: block;
+	padding: 1.6em 0;
+	width: 100%;
+}
+.input__label-content1 {
+	text-align: center;
 	position: relative;
 	display: block;
 	padding: 1.6em 0;
@@ -1013,8 +1093,18 @@ form {
 	transition: opacity 0.3s, transform 0.3s;
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
+.input__label-content--isao1 {
+	text-align: center;
+	padding: 0.75em 0.15em;
+	transition: opacity 0.3s, transform 0.3s;
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
 
 .input__field--isao:focus + .input__label--isao .input__label-content--isao {
+	opacity: 0;
+	transform: translate3d(0, -50%, 0);
+}
+.input__field--isao:focus + .input__label--isao1 .input__label-content--isao1 {
 	opacity: 0;
 	transform: translate3d(0, -50%, 0);
 }
@@ -1029,6 +1119,14 @@ form {
 
 /* font faces & media queries */
 
+@font-face {
+	font-family: 'FuturaRegular';
+	src: url('fonts/FuturaRegular.woff') format('woff');
+}
+@font-face {
+	font-family: 'GothamBook';
+	src: url('fonts/GothamBook.woff') format('woff');
+}
 @font-face {
 	font-family: 'GothamBold';
 	src: url('fonts/GothamBold.woff') format('woff');
@@ -1103,6 +1201,7 @@ form {
   .row-image{
     display: block;
     margin-bottom: 45px;
+    font-family: 'GothamLight';
   }
   .one-a{
     margin-top: 45px;
