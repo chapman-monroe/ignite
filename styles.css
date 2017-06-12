@@ -578,7 +578,7 @@ a{
 }*/
 
 .row-alumni-image{
-  margin-left: 50px;
+  margin-left: 20%;
   
 }
 
@@ -614,7 +614,8 @@ a{
 }
 
 .apply{
-  height: 100vh;
+  height: auto;
+  padding-bottom: 50px;
 }
 
 .membership-perks{
@@ -1034,7 +1035,7 @@ form {
 }
 
 .alumni-image-one{
-  padding-left: 70px;
+  padding-left: 10%;
 }
 
 iframe{
