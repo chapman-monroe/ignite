@@ -1,3 +1,29 @@
+
+    // $(".kimDesc").hover(function() {
+    //     $(".kimTitle").css("color", "#CFF1F4");
+    //     $(".kimTitle").css("transform", "scale(1.05)");
+    //     $(".kim").css("transform", "scale(1.08)");
+    // },
+    // function() {
+    //     $(".kimTitle").css("color", "#A1CAF1");
+    //     $(".kimTitle").css("transform", "scale(1)");
+    //     $(".kim").css("transform", "scale(1)");
+    // }
+    // );
+    // $(".kendallDesc").hover(function() {
+    //     $(".kendallTitle").css("color", "#CFF1F4");
+    //     $(".kendallTitle").css("transform", "scale(1.05)");
+    //     $(".kendall").css("transform", "scale(1.08)");
+    // },
+    // function() {
+    //     $(".kendallTitle").css("color", "#A1CAF1");
+    //     $(".kendallTitle").css("transform", "scale(1)");
+    //     $(".kendall").css("transform", "scale(1)");
+    // }
+    // );
+
+
+
 $(document).ready(function(){       
 		$(".one-a").click(function() {
         $('html,body').animate({
@@ -30,13 +56,13 @@ $(document).ready(function(){
 	    				$(".applybtn").css("margin", "6px 10px 3px 0");
                         $(".text").css("font-size", "15px");
     				}
-                    if(wn > 1100) {
+                    if(wn > 1050) {
                         $(".adam").css("opacity", "1");
                         $(".adam").css("transform", "translate(-50%, 0) scale(1)");
                         $(".adamTitle").css("opacity", "1");
                         $(".adamTitle").css("transform", "translate(-50%, 0) scale(1)");
                     }
-                    if(wn > 1200) {
+                    if(wn > 1150) {
                         $(".kim").css("opacity", "1");
                         $(".kim").css("transform", "scale(1)");
                         $(".kimTitle").css("opacity", "1");
@@ -74,4 +100,5 @@ $(document).ready(function(){
     			}
       		});
 		});
+
 
