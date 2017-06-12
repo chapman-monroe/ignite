@@ -47,13 +47,13 @@ $(document).ready(function(){
     				else {
 	    				$(".logo").css("width", "48px");
 	    				$(".logo").css("height", "48px");
-	    				$(".logo").css("margin-top", "3px");
+	    				$(".logo").css("margin-top", "4px");
 	    				$(".navbuttons").css("font-size", "15px");
-	    				$(".navbuttons").css("padding", "8px 55px 8px 0");
-	    				$(".navbuttons").css("margin", "5px 0");
+	    				$(".navbuttons").css("padding", "10px 55px 10px 0");
+	    				$(".navbuttons").css("margin", "10px 0");
                         $(".applybtn").css("font-size", "15px");
-	    				$(".applybtn").css("padding", "7px 20px");
-	    				$(".applybtn").css("margin", "6px 10px 3px 0");
+	    				$(".applybtn").css("padding", "10px 20px");
+	    				$(".applybtn").css("margin", "10px 10px 10px 0");
                         $(".text").css("font-size", "15px");
     				}
                     if(wn > 1050) {
@@ -79,7 +79,7 @@ $(document).ready(function(){
    					if($(window).width() <= 900) {
     					$(".logo").css("width", "53px");
     					$(".logo").css("height", "53px");
-    					$(".logo").css("margin-top", "3px");
+    					$(".logo").css("margin-top", "4px");
     					$(".dropbtn").css("width", "30px");
     					$(".dropbtn").css("height", "30px");
     					$(".dropbtn").css("padding", "0");
@@ -87,9 +87,9 @@ $(document).ready(function(){
     					$(".content").css("top", "58px");
     				}
     				else {
-	    				$(".logo").css("width","85px");
-	    				$(".logo").css("height","85px");
-	    				$(".logo").css("margin-top", "6px");
+	    				$(".logo").css("width","65px");
+	    				$(".logo").css("height","65px");
+	    				$(".logo").css("margin-top", "8px");
 	    				$(".navbuttons").css("font-size", "20px");
 	    				$(".navbuttons").css("padding", "14px 55px 14px 0");
 	    				$(".navbuttons").css("margin", "14px 0");
