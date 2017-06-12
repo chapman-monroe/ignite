@@ -72,7 +72,6 @@ button:focus {
 .text:hover  {
 	color: #609BDF;
 }
-
 h1{
   margin: 0;
 }
@@ -143,6 +142,7 @@ h3{
   padding-top: 5px;
   padding-bottom: 5px;
   color: white;
+  transition: background-color 0.1s ease;
 }
 
 .apply-button:hover{
@@ -795,9 +795,10 @@ a{
 	font-size: 20px;
 }
 .footer {
-	background-color: #BFBDBD;
+	background-color: white;
 	height: 370px;
 	color: black;
+	font-family: 'GothamLight';
 }
 .footLeft {
 	padding: 20px;
@@ -806,9 +807,13 @@ a{
 }
 .footRight {
 	padding: 20px;
+	position: relative;
 }
 .nlHeader {
-	font-size: 30px;
+	font-size: 32px;
+}
+.jointext {
+	font-family: "GothamBold";
 }
 input:focus {
 	outline: 0;
@@ -823,7 +828,7 @@ input:focus {
 	width: 170px;
 	height: 170px;
 	transform: translate(0, 28px);
-	left: 55%;
+	left: 7%;
 }
 form {
 	position: relative;
@@ -831,8 +836,58 @@ form {
 	left: 62%;
 	margin-right: 50%;
 	transform: translate(-50%, 0);
+	margin-top: -10px;
 }
+.otherProgButton {
+	border-radius: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #6666FF;
+	font-family: 'GothamLight';
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	height: 50px;
+	background: #6666FF;
+	border: 1px solid #6666FF;
+	color: #FFF;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.check {
+	-webkit-mask-box-image: url("checkmark.png");
+/*	background-image: url("checkmark.png");
+*/	background-size: cover;
+	top: 47%;
+	transform: translate(0, -50%);
+	right: 7%;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.otherProgButton:hover {
+  color: #6666FF;
+  border-color: #6666FF;
+  background: #FFF;
+}
+.otherProgButton:hover .check {
+  filter: invert(0%);
+  opacity: 1;
+}
+
+.submitText {
+  transition: padding-right 0.5s;
+}
+
+.otherProgButton:hover .submitText {
+  padding-right: 17%;
+}
+
 .input__field {
+	margin-top: -10px;
 	position: relative;
 	display: block;
 	float: right;
@@ -842,10 +897,10 @@ form {
 	border-radius: 0;
 	background: #F0F0F0;
 	color: #aaa;
-	font-size: 100%;
+	font-size: 105%;
 	font-weight: bold;
 	appearance: none;
-	font-family: 'GothamBold';
+	font-family: 'GothamLight';
 }
 .input__label {
 	display: inline-block;
@@ -872,9 +927,9 @@ form {
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
-	color: #dadada;
+	color: #000;
 	text-align: left;
-}
+}	
 
 .input__label--isao::before {
 	content: '';
@@ -882,7 +937,7 @@ form {
 	top: 0;
 	width: 100%;
 	height: 7px;
-	background: #dadada;
+	background: #ccc	;
 	transform: scale3d(1, 0.4, 1);
 	transform-origin: 50% 100%;
 	transition: transform 0.3s, background-color 0.3s;
@@ -950,22 +1005,8 @@ form {
 	src: url('fonts/Chunkfive.woff') format('woff');
 }
 @font-face {
-  font-family: 'GothamLight';
-  src: url('fonts/GothamLight.eot');
-  src: url('fonts/GothamLight.eot?#iefix') format('embedded-opentype'),
-    url('fonts/GothamLight.woff') format('woff'),
-    url('fonts/GothamLight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'GothamBold';
-  src: url('fonts/GothamBold.eot');
-  src: url('fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/GothamBold.woff') format('woff'),
-    url('fonts/GothamBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+	font-family: 'GothamLight';
+	src: url('fonts/GothamLightRegular.woff') format('woff');
 }
 @media screen and (max-width: 610px) {
 	.curriculum-title {
