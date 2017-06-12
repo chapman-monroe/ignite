@@ -1,370 +1,3 @@
-body{
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-family: 'GothamBold';
-  color: white;
-}
-
-.navbar {
-	width: 100%;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	border-bottom: black;
-	background-color: rgba(7, 12, 16, 0.85);
-	position: fixed;
-	z-index: 20;
-}
-li {
-	float: right;
-}
-.logo {
-	width: 85px;
-	background-image: url("hcvlogo.png");
-	background-size: cover;
-	height: 85px;
-	margin-left: 14%;
-	position: absolute;
-	margin-top: 6px;
-	cursor: pointer;
-	z-index: 21;
-	transition: all 0.13s ease-in-out;
-}
-.logo:hover {
-	transform: scale(1.05);
-}
-button {
-	margin: 14px 0;
-	position: relative;
-	font-family: 'GothamBold';
-	border: none;
-	font-size: 20px;
-	padding: 14px 55px 14px 0;
-	background-color: transparent;
-	transition: all 0.13s ease-in-out;
-}
-button:focus {
-	outline: 0;
-}
-.applybtn {
-	background-color: #3187C8;
-	border-radius: 20px;
-	margin: 20px 15px 20px 0;
-	padding: 9px 35px;
-	transition: all 0.13s ease-in-out;
-}
-.applybtn:hover .text {
-	color: white;
-}
-.applybtn:hover {
-	background-color: #2277AA;
-	cursor: pointer;
-}
-.tabs {
-	display: inline-block;
-}
-.text {
-	color: white;
-	cursor: pointer;
-	transition: all 0.13s ease-in-out;
-}
-.text:hover  {
-	color: #609BDF;
-}
-
-h1{
-  margin: 0;
-}
-
-.home{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 600px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-
-.overlay{
-  background-color: rgba(0,0,0, .6);
-  position: absolute;
-  height: 600px;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-
-.container{
-  width: 90%;
-  margin: 0 auto;
-  z-index: 10;
-  position: relative;
-}
-
-.title-main{
-  height: 600px;
-  z-index: 10;
-}
-
-.hero-title{
-  color: white;
-  padding-top: 200px;
-  z-index: 10;
-}
-
-.strong{
-  color: #0098DB;
-  font-size: 72px;
-  text-transform: uppercase;
-}
-
-h3{
-  font-family: 'GothamLight';
-  padding-top: 20px;
-  line-height: 23px;
-  font-size: 17px;
-}
-.applyref {
-	text-decoration: none;
-}
-.apply-button{
-  background-color: #1E73BE;
-  width: 50%;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: white;
-}
-
-.apply-button:hover{
-  background-color: white;
-  color: #1E73BE;
-}
-
-.curriculum{
-  background-color: #1E73BE;
-  padding-bottom: 30px;
-}
-
-.curriculum-title{
-  text-align: center;
-  padding-top: 40px;
-  font-size: 52px;
-  padding-bottom: 30px;
-}
-
-.row-image{
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.one-b{
-  margin-top: 45px;
-  margin-bottom: 15px;
-}
-
-.three-b{
-  margin-top: 45px;
-  margin-bottom: 15px;
-}
-.three-a{
-  margin-top: 45px;
-  margin-bottom: 15px;
-
-}
-
-.row-caption{
-  position: absolute;
-  bottom: -22px;
-  left: 0;
-}
-
-.small{
-  font-family: 'GothamLight';
-  margin-top: 20px;
-}
-
-
-span.text-content {
-  background: rgba(0,0,0,0.8);
-  color: white;
-  display: table;
-  height: 200px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  opacity: 0;
-}
-
-span.text-content span {
-  display: table-cell;
-  text-align: left;
-  vertical-align: middle;
-  font-family: "GothamLight";
-  margin: 0 auto;
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
-.row-image:hover span.text-content{
-  opacity: 1;
-}
-
-.one-a{
-  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/Screen-Shot-2017-01-28-at-1.27.01-PM.jpg");
-}
-
-.two-a{
-  background-image: url("images/se-logo.png");
-}
-
-.three-a{
-  background-image: url("images/ind-init.jpg");
-}
-
-.one-b{
-  background-image: url("images/impact-team.jpg");
-}
-
-.two-b{
-  background-image: url("images/events.jpg");
-}
-
-.three-b{
-  background-image: url("images/hot-date-new.jpg");
-}
-
-
-h4{
-  margin: 0;
-}
-
-.alumni{
-  background: linear-gradient(to left, #345673 , #0E1C27 );
-}
-
-.row-alumni{
-  padding-top: 20px;
-}
-.row-alumni-img{
-  width: 400px;
-}
-
-.row-alumni-img-two{
-  width: 400px;
-}
-
-
-.alumni-image{
-  text-align: center;
-  margin-bottom: 35px;
-}
-
-p{
-  font-family: "GothamLight";
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-.alumni-title{
-  padding-top: 80px;
-}
-
-.row-item{
-  padding-right: 20px;
-  padding-top: 50px;
-}
-
-.carousel{
-  width: 400px;
-  position: relative;
-}
-
-/*.carousel-one{
-  margin-left: 50px;
-}
-
-.carousel-two{
-  margin-right: 50px;
-}*/
-
-.row-alumni-image{
-  margin-left: 50px;
-  
-}
-
-
-.slide-button{
-  display: inline-block;
-  color: white;
-  position: absolute;
-  top: 40%;
-  padding: 10px;
-  background-color: rgba(0,0,0,.8);
-}
-
-.left-button{
-  left: 0;
-}
-
-.right-button{
-  right: 0;
-}
-
-.alumni-link{
-  color: #1E73BE;
-}
-
-.alum-face{
-  border-radius: 100%;
-  width: 150px;
-}
-
-.alum-name{
-  padding-top: 50px;
-}
-
-.apply{
-  height: 100vh;
-}
-
-.membership-perks{
-  background-color: #3187C8;
-}
-
-.icon-holder{
-  text-align: center;
-}
-
-.apply-link{
-  text-align: left;
-  font-size: 40px;
-  margin:34px auto;
-}
-
-.blue-link{
-  text-transform: uppercase;
-  color: #3187C8;
-}
-.events{
-  padding-bottom: 50px;
-
-}
-
 /* Code from Toast Below DO NOT TOUCH */
 
 .grid {
@@ -574,7 +207,7 @@ a{
   display: inline-block;
   margin-right: -.25em;
   min-height: 1px;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
   vertical-align: top; }
   @media (max-width: 900px) {
     .grid__col {
@@ -637,6 +270,377 @@ a{
   vertical-align: middle; }
 
 /* code from Toast above DO NOT TOUCH*/
+
+
+body{
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: 'GothamBold';
+  color: white;
+}
+
+.navbar {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: black;
+	background-color: rgba(7, 12, 16, 0.85);
+	position: fixed;
+	z-index: 20;
+}
+li {
+	float: right;
+}
+.logo {
+	width: 65px;
+	background-image: url("hcvlogo.png");
+	background-size: cover;
+	height: 65px;
+	margin-left: 5%;
+	position: absolute;
+	margin-top: 8px;
+	cursor: pointer;
+	z-index: 21;
+	transition: all 0.13s ease-in-out;
+}
+.logo:hover {
+	transform: scale(1.05);
+}
+button {
+	margin: 14px 0;
+	position: relative;
+	font-family: 'GothamBold';
+	border: none;
+	font-size: 20px;
+	padding: 14px 55px 14px 0;
+	background-color: transparent;
+	transition: all 0.13s ease-in-out;
+}
+button:focus {
+	outline: 0;
+}
+.applybtn {
+	background-color: #3187C8;
+	border-radius: 20px;
+	margin: 20px 15px 20px 0;
+	padding: 9px 35px;
+	transition: all 0.13s ease-in-out;
+}
+.applybtn:hover .text {
+	color: white;
+}
+.applybtn:hover {
+	background-color: #2277AA;
+	cursor: pointer;
+}
+.tabs {
+	display: inline-block;
+}
+.text {
+	color: white;
+	cursor: pointer;
+	transition: all 0.13s ease-in-out;
+}
+.text:hover  {
+	color: #609BDF;
+}
+h1{
+  margin: 0;
+}
+
+.home{
+  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2016/07/14589983_1537006319649037_8698250820981804628_o.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+
+.overlay{
+  background-color: rgba(0,0,0, .6);
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+
+.title-main{
+  height: 600px;
+  z-index: 10;
+  padding-left: 0;
+}
+
+.hero-title{
+  color: white;
+  padding-top: 200px;
+  z-index: 10;
+}
+
+.strong{
+  color: #0098DB;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+h3{
+  font-family: 'GothamLight';
+  padding-top: 20px;
+  line-height: 23px;
+  font-size: 17px;
+}
+.applyref {
+	text-decoration: none;
+}
+.apply-button{
+  background-color: #1E73BE;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  transition: background-color 0.1s ease;
+}
+
+.apply-button:hover{
+  background-color: white;
+  color: #1E73BE;
+}
+
+.curriculum{
+  background-color: #1E73BE;
+  padding-bottom: 30px;
+}
+
+.curriculum-title{
+  text-align: center;
+  padding-top: 40px;
+  font-size: 52px;
+  padding-bottom: 30px;
+}
+
+.row-image{
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.one-b{
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.three-b{
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+.three-a{
+  margin-top: 45px;
+  margin-bottom: 15px;
+
+}
+
+.row-caption{
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+}
+
+.small{
+  font-family: 'GothamLight';
+  margin-top: 20px;
+}
+
+
+span.text-content {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  font-family: "GothamLight";
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.row-image:hover span.text-content{
+  opacity: 1;
+}
+
+.one-a{
+  background-image: url("http://1qjqp144udvjh172yr0eqox1.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/Screen-Shot-2017-01-28-at-1.27.01-PM.jpg");
+}
+
+.two-a{
+  background-image: url("images/se-logo.png");
+}
+
+.three-a{
+  background-image: url("images/ind-init.jpg");
+}
+
+.one-b{
+  background-image: url("images/impact-team.jpg");
+}
+
+.two-b{
+  background-image: url("images/events.jpg");
+}
+
+.three-b{
+  background-image: url("images/hot-date-new.jpg");
+}
+
+
+h4{
+  margin: 0;
+}
+
+.alumni{
+  background: linear-gradient(to left, #345673 , #0E1C27 );
+}
+
+.row-alumni{
+  padding-top: 20px;
+}
+.row-alumni-img{
+  width: 400px;
+}
+
+.row-alumni-img-two{
+  width: 400px;
+}
+
+
+.alumni-image{
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+p{
+  font-family: "GothamLight";
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.alumni-title{
+  padding-top: 120px;
+}
+
+.row-item{
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+.carousel{
+  width: 400px;
+  position: relative;
+}
+
+/*.carousel-one{
+  margin-left: 50px;
+}
+
+.carousel-two{
+  margin-right: 50px;
+}*/
+
+.row-alumni-image{
+  margin-left: 50px;
+  
+}
+
+
+.slide-button{
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 40%;
+  padding: 10px;
+  background-color: rgba(0,0,0,.8);
+}
+
+.left-button{
+  left: 0;
+}
+
+.right-button{
+  right: 0;
+}
+
+.alumni-link{
+  color: #1E73BE;
+}
+
+.alum-face{
+  border-radius: 100%;
+  width: 150px;
+}
+
+.alum-name{
+  padding-top: 50px;
+}
+
+.apply{
+  height: 100vh;
+}
+
+.membership-perks{
+  background-color: #3187C8;
+}
+
+.icon-holder{
+  text-align: center;
+}
+
+.apply-link{
+  text-align: left;
+  font-size: 40px;
+  margin:34px auto;
+}
+
+.blue-link{
+  text-transform: uppercase;
+  color: #3187C8;
+}
+.events{
+  padding-bottom: 50px;
+
+}
+
+
 
 
 .dropdown {
@@ -826,9 +830,10 @@ a{
 	font-size: 20px;
 }
 .footer {
-	background-color: #BFBDBD;
+	background-color: white;
 	height: 370px;
 	color: black;
+	font-family: 'GothamLight';
 }
 .footLeft {
 	padding: 20px;
@@ -837,9 +842,13 @@ a{
 }
 .footRight {
 	padding: 20px;
+	position: relative;
 }
 .nlHeader {
-	font-size: 30px;
+	font-size: 32px;
+}
+.jointext {
+	font-family: "GothamBold";
 }
 input:focus {
 	outline: 0;
@@ -854,7 +863,7 @@ input:focus {
 	width: 170px;
 	height: 170px;
 	transform: translate(0, 28px);
-	left: 55%;
+	left: 7%;
 }
 form {
 	position: relative;
@@ -862,8 +871,65 @@ form {
 	left: 62%;
 	margin-right: 50%;
 	transform: translate(-50%, 0);
+	margin-top: -10px;
 }
+.otherProgButton {
+	border-radius: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #6666FF;
+	font-family: 'GothamLight';
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	height: 50px;
+	background: #6666FF;
+	border: 1px solid #6666FF;
+	color: #FFF;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.check {
+	-webkit-mask-box-image: url("checkmark.png");
+/*	background-image: url("checkmark.png");
+*/	background-size: cover;
+	top: 47%;
+	transform: translate(0, -50%);
+	right: 7%;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.jade-hidden{
+  display: none;
+}
+
+.jade-shown{
+  padding-right: 0;
+}
+.otherProgButton:hover {
+  color: #6666FF;
+  border-color: #6666FF;
+  background: #FFF;
+}
+.otherProgButton:hover .check {
+  filter: invert(0%);
+  opacity: 1;
+}
+
+.submitText {
+  transition: padding-right 0.5s;
+}
+
+.otherProgButton:hover .submitText {
+  padding-right: 17%;
+}
+
 .input__field {
+	margin-top: -10px;
 	position: relative;
 	display: block;
 	float: right;
@@ -873,10 +939,10 @@ form {
 	border-radius: 0;
 	background: #F0F0F0;
 	color: #aaa;
-	font-size: 100%;
+	font-size: 105%;
 	font-weight: bold;
 	appearance: none;
-	font-family: 'GothamBold';
+	font-family: 'GothamLight';
 }
 .input__label {
 	display: inline-block;
@@ -903,9 +969,9 @@ form {
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
-	color: #dadada;
+	color: #000;
 	text-align: left;
-}
+}	
 
 .input__label--isao::before {
 	content: '';
@@ -913,7 +979,7 @@ form {
 	top: 0;
 	width: 100%;
 	height: 7px;
-	background: #dadada;
+	background: #ccc	;
 	transform: scale3d(1, 0.4, 1);
 	transform-origin: 50% 100%;
 	transition: transform 0.3s, background-color 0.3s;
@@ -985,22 +1051,8 @@ iframe{
 	src: url('fonts/Chunkfive.woff') format('woff');
 }
 @font-face {
-  font-family: 'GothamLight';
-  src: url('fonts/GothamLight.eot');
-  src: url('fonts/GothamLight.eot?#iefix') format('embedded-opentype'),
-    url('fonts/GothamLight.woff') format('woff'),
-    url('fonts/GothamLight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'GothamBold';
-  src: url('fonts/GothamBold.eot');
-  src: url('fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/GothamBold.woff') format('woff'),
-    url('fonts/GothamBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+	font-family: 'GothamLight';
+	src: url('fonts/GothamLightRegular.woff') format('woff');
 }
 @media screen and (max-width: 610px) {
 	.curriculum-title {
@@ -1077,21 +1129,7 @@ iframe{
     padding-top: 30px;
     border: none;
   }
-}
 
-.row-item{
-  padding: 0;
-}
-
-.alumni-name{
-  padding: 0;
-}
-
-.jade-hidden{
-  display: none;
-}
-
-@media (max-width: 900px){
   .icon-holder{
     width: 100%;
   }
@@ -1111,7 +1149,16 @@ iframe{
   .row-item{
     text-align: center;
   }
+
+  .alumni-image{
+    padding-left: 0;
+  }
+  .carousel{
+    margin: 0 auto;
+  }
 }
+
+
 
 @media (max-width: 700px){
   
@@ -1134,11 +1181,22 @@ iframe{
   .alumni-face{
     width: 100%;
     text-align: center;
+    padding-bottom: 10px;
   }
 
   .alumni-name{
     text-align: center;
     width: 100%;
+  }
+
+  .alum-name{
+    padding-top: 0;
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .row-item{
+    padding-top: 10px;
   }
 }
 
