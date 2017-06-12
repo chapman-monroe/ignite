@@ -56,13 +56,13 @@ $(document).ready(function(){
 	    				$(".applybtn").css("margin", "10px 10px 10px 0");
                         $(".text").css("font-size", "15px");
     				}
-                    if(wn > 1050) {
+                    if(wn > 950) {
                         $(".adam").css("opacity", "1");
                         $(".adam").css("transform", "translate(-50%, 0) scale(1)");
                         $(".adamTitle").css("opacity", "1");
                         $(".adamTitle").css("transform", "translate(-50%, 0) scale(1)");
                     }
-                    if(wn > 1150) {
+                    if(wn > 1050) {
                         $(".kim").css("opacity", "1");
                         $(".kim").css("transform", "scale(1)");
                         $(".kimTitle").css("opacity", "1");
