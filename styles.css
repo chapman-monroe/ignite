@@ -136,7 +136,7 @@ h3{
 }
 .apply-button{
   background-color: #1E73BE;
-  width: 100%;
+  width: 50%;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -166,16 +166,35 @@ h3{
   height: 200px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 200px;
-  margin: 20px auto;
+  background-size: cover;
   position: relative;
+}
+
+.one-b{
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.three-b{
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+.three-a{
+  margin-top: 45px;
+  margin-bottom: 15px;
+
+}
+
+.row-caption{
+  position: absolute;
+  bottom: -22px;
+  left: 5px;
 }
 
 
 span.text-content {
   background: rgba(0,0,0,0.8);
   color: white;
-  cursor: pointer;
   display: table;
   height: 200px;
   left: 0;
@@ -1028,9 +1047,13 @@ form {
 
   .row-image{
     display: block;
+    margin-bottom: 45px;
+  }
+  .one-a{
+    margin-top: 45px;
   }
   .row-caption{
-    display: none;
+    top: -22px;
   }
 
   .alumni-image{
@@ -1045,9 +1068,7 @@ form {
     width: 100%;
   }
 
-  .row-image{
-    background-size: 80% 500px;
-  }
+  
 
   .apply-button{
     width: 50%;
@@ -1056,10 +1077,7 @@ form {
 }
 
 @media (max-width: 700px){
-  .row-image{
-    background-size: 100% 500px;
-    position: relative;
-  }
+  
 
   span.text-content {
     position: absolute;
@@ -1068,11 +1086,12 @@ form {
     width: 100%;
     left: 0;
     top: 0;
+    background-color: rgba(0,0,0,.6);
   }
 
-  .row-caption{
+  /*.row-caption{
     display: none;
-  }
+  }*/
 }
 
 
