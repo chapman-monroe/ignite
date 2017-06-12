@@ -811,15 +811,133 @@ a{
 	font-size: 30px;
 }
 input:focus {
-	border: solid 1px #707070;
-	box-shadow: 0 0 5px 1px #969696;
 	outline: 0;
 }
-
-
 .calendar{
   text-align: center;
 }
+.footlogo {
+	position: absolute;
+	background-image: url("hcvlogo.png");
+	background-size: cover;
+	width: 170px;
+	height: 170px;
+	transform: translate(0, 28px);
+	left: 55%;
+}
+form {
+	position: relative;
+	width: 40%;
+	left: 62%;
+	margin-right: 50%;
+	transform: translate(-50%, 0);
+}
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #F0F0F0;
+	color: #aaa;
+	font-size: 100%;
+	font-weight: bold;
+	appearance: none;
+	font-family: 'GothamBold';
+}
+.input__label {
+	display: inline-block;
+	float: right;
+	padding: 0 1em;
+	width: 40%;
+	color: #6A7989;
+	font-weight: bold;
+	font-size: 80%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-touch-callout: none;
+	user-select: none;
+}
+.input__field--isao {
+	z-index: 10;
+	padding: 0.75em 0.1em 0.25em;
+	width: 100%;
+	background: transparent;
+	color: #00006D;
+}
+
+.input__label--isao {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+	color: #dadada;
+	text-align: left;
+}
+
+.input__label--isao::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 7px;
+	background: #dadada;
+	transform: scale3d(1, 0.4, 1);
+	transform-origin: 50% 100%;
+	transition: transform 0.3s, background-color 0.3s;
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.input__label--isao::after {
+	content: attr(data-content);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0.75em 0.15em;
+	color: #3187C8;
+	opacity: 0;
+	transform: translate3d(0, 50%, 0);
+	transition: opacity 0.3s, transform 0.3s;
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	pointer-events: none;
+}
+
+.input__field--isao:focus + .input__label--isao::before {
+	background-color: #3187C8;
+	transform: scale3d(1, 1, 1);
+}
+
+.input__field--isao:focus + .input__label--isao {
+	pointer-events: none;
+}
+
+.input__field--isao:focus + .input__label--isao::after {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 1.6em 0;
+	width: 100%;
+}
+.input__label-content--isao {
+	padding: 0.75em 0.15em;
+	transition: opacity 0.3s, transform 0.3s;
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.input__field--isao:focus + .input__label--isao .input__label-content--isao {
+	opacity: 0;
+	transform: translate3d(0, -50%, 0);
+}
+*:after, *:before {
+	box-sizing: border-box;
+}
+
+
+
 
 /* font faces & media queries */
 
@@ -1114,9 +1232,4 @@ input:focus {
   .curriculum{
     padding-top: 40px;
   }
-
-
 }
-
-
->>>>>>> edits
