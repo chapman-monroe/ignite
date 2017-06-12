@@ -22,7 +22,9 @@
     // }
     // );
 
-
+window.onclick = function(event) {
+  document.getElementById("ddn").css("display", "none");
+}
 
 $(document).ready(function(){       
 		$(".one-a").click(function() {
