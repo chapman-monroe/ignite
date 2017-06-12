@@ -378,7 +378,9 @@ h1{
   z-index: 10;
   position: relative;
 }
-
+.perks {
+	padding-bottom: 25px;
+}
 .title-main{
   height: 600px;
   z-index: 10;
@@ -434,7 +436,10 @@ h3{
   font-size: 52px;
   padding-bottom: 30px;
 }
-
+.perktitle {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
 .row-image{
   height: 200px;
   background-repeat: no-repeat;
@@ -640,9 +645,6 @@ a{
 
 }
 
-
-
-
 .dropdown {
 	display: none;
 }
@@ -651,6 +653,7 @@ a{
 	background: linear-gradient(to left, #345673, #0E1C27);
 	height: 665px;
 	position: relative;
+	padding: 20px 0 5px 0;
 }
 .headshot {
 	position: absolute;
@@ -663,7 +666,7 @@ a{
 	background-image: url('adampic.png');
 	width: 282px;
 	height: 282px;
-	top: 30px;
+	top: 40px;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, 0) scale(0);
@@ -700,7 +703,7 @@ a{
 	letter-spacing: 1px;
 }
 .adamTitle {
-	top: 300px;
+	top: 310px;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, 0) scale(0);
@@ -745,7 +748,7 @@ a{
 	font-size: 15px;
 }
 .adamDesc {
-	top: 330px;
+	top: 340px;
 	border: 1px solid white;
 	width: 330px;
 	height: 220px;
@@ -777,11 +780,11 @@ a{
 }
 .adam:hover ~ .adamDesc {
 	opacity: 0.98;
-	top: 372px;
+	top: 382px;
 	transition-delay: 0s;
 }
 .adam:hover ~ .adamTitle {
-	top: 303px !important;
+	top: 313px !important;
 	color: #CFF1F4 !important;
 	transform: translate(-50%, 0) scale(1.05) !important;
 }
@@ -942,14 +945,12 @@ input:focus {
 }
 .otherProgButton:hover .check {
 	filter: invert(0%);
-/*  -webkit-filter: brightness(50%) sepia(1) hue-rotate(168deg) saturate(63.5%) brightness(88%);
-*/  opacity: 1;
+  opacity: 1;
   top: 47%;
 }
 .otherProgButton:hover .check1 {
 	filter: invert(0%);
-/*  -webkit-filter: brightness(50%) sepia(1) hue-rotate(168deg) saturate(63.5%) brightness(88%);
-*/  opacity: 1;
+  opacity: 1;
   top: 47%;
 }
 .submitText {
@@ -1060,7 +1061,7 @@ input:focus {
 	position: absolute;
 	top: 0;
 	left: 50%;
-	padding: 0.75em 0.15em;
+	padding: 0.75em 0em;
 	color: #3187C8;
 	opacity: 0;
 	transform: translate3d(-50%, 50%, 0);
@@ -1106,7 +1107,7 @@ input:focus {
 }
 .input__label-content--isao1 {
 	text-align: center;
-	padding: 0.75em 0.15em;
+	padding: 0.75em 0em;
 	transition: opacity 0.3s, transform 0.3s;
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
@@ -1122,10 +1123,15 @@ input:focus {
 *:after, *:before {
 	box-sizing: border-box;
 }
-
 .alumni-image-one{
   padding-left: 70px;
 }
+.sixDesc {
+	padding-bottom: 30px;
+}
+
+
+
 
 
 /* font faces & media queries */
