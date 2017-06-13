@@ -1173,6 +1173,15 @@ iframe{
 	h1, h3 {
 		text-align: center;
 	}
+
+  .row-item{
+    padding-right: 0;
+  }
+
+  .alumni-face{
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
 	.tabs {
 		display: none;
 	}
@@ -1226,7 +1235,12 @@ iframe{
   .row-image{
     display: block;
     margin-bottom: 45px;
-    font-family: 'GothamLight';
+    font-family: 'GothamBold';
+    height: 350px;
+  }
+
+  span.text-content{
+    height: 350px;
   }
   .one-a{
     margin-top: 45px;
@@ -1276,7 +1290,6 @@ iframe{
 
   span.text-content {
     position: absolute;
-    height: 200px;
     opacity: 1;
     width: 100%;
     left: 0;
@@ -1305,6 +1318,14 @@ iframe{
 
   .row-item{
     padding-top: 10px;
+  }
+
+  .row-image{
+    height: 250px;
+  }
+
+  span.text-content{
+    height: 250px;
   }
 }
 
