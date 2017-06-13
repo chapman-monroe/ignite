@@ -1729,7 +1729,7 @@ iframe{
 }
 @media (max-width: 580px) {
 	.footlogo {
-		width: 93px;
+		width: 90px;
 		height: 90px;
 		transform: translate(0, 40px);
 		left: 3%;
@@ -1748,8 +1748,8 @@ iframe{
 		width: 80%;
 	}
 	.rform {
-		left: 63%;
-		width: 285px;
+		left: 62%;
+		width: 234px;
 	}
 
 }
