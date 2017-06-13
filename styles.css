@@ -1543,10 +1543,11 @@ iframe{
 }
 @media (max-width: 810px) {
 	.instrSect {
-		height: 1975px;
+		height: 1950px;
 	}
 	.instrHeading {
-		font-size: 70px;
+		margin-top: 20px;
+		font-size: 60px;
 	}
 	.kim {
 		left: 50% !important;
@@ -1558,7 +1559,7 @@ iframe{
 		left: 50% !important;
 		margin-right: -50% !important;
 		transform: translate(-50%, 0) !important;
-		top: 1415px;
+		top: 1400px;
 	}
 	.adamTitle {
 		top: 473px;
@@ -1574,7 +1575,7 @@ iframe{
 	}
 	.kendallTitle {
 		width: 100%;
-		top: 1635px;
+		top: 1620px;
 		left: 50%;
 		transform: translate(-50%, 0) !important;
 		text-align: center;
@@ -1584,13 +1585,15 @@ iframe{
 		opacity: 1;
 		top: 553px;
 		border: 1px solid white;
-		width: 330px;
+		width: 290px;
 		height: 220px;
 		left: 50%;
 		margin-right: -50%;
 		transform: translate(-50%, 0);
 	}
 	.kimDesc {
+		width: 245px;
+		height: 192px;
 		top: 1135px;
 		opacity: 1;
 		left: 50%;
@@ -1598,7 +1601,9 @@ iframe{
 		transform: translate(-50%, 0);
 	}
 	.kendallDesc {
-		top: 1715px;
+		width: 245px;
+		height: 196px;
+		top: 1700px;
 		opacity: 1;
 		left: 50%;
 		margin-right: -50%;
@@ -1647,19 +1652,19 @@ iframe{
 	}
 	.kendall:hover ~ .kendallDesc {
 		opacity: 0.98;
-		top: 1715px;
+		top: 1700px;
 		left: 50% !important;
 		margin-right: -50%;
 		transform: translate(-50%, 0) !important;
 	}
 	.kendall:hover ~ .kendallTitle {
-		top: 1635px !important;
+		top: 1620px !important;
 		color: #A1CAF1 !important;
 		transform: translate(-50%, 0) scale(1) !important;
 	}
 	.kendallDesc:hover {
 		opacity: 0.98;
-		top: 1715px;
+		top: 1700px;
 		transform: translate(-50%, 0);
 	}
 }
