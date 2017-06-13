@@ -1249,14 +1249,10 @@ iframe{
     top: -22px;
   }
 
-  .alumni-image{
-    width: 100%;
-    padding-top: 30px;
-    border: none;
-  }
-
   .icon-holder{
     width: 100%;
+    text-align: center;
+    display: block;
   }
 
   .jade-hidden{
@@ -1275,10 +1271,7 @@ iframe{
     text-align: center;
   }
 
-  .alumni-image{
-    padding-left: 0;
-  }
-  .carousel{
+  .carousel{s
     margin: 0 auto;
   }
 }
@@ -1673,8 +1666,17 @@ iframe{
     .grid__col {
       margin-left: 0;
       margin-right: 0;
-      width: auto;]
+      width: auto;
   	}
+
+    .alumni-image{
+      padding-left: 0;
+      width: 100%;
+      padding-top: 30px;
+    }
+    .carousel{
+      margin: 0 auto;
+    }
   	.footLeft {
   		margin-bottom: 5px;
   		border-bottom: 1px solid black;
