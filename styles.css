@@ -209,11 +209,6 @@
   min-height: 1px;
   /*padding-left: 20px;*/
   vertical-align: top; }
-  @media (max-width: 900px) {
-    .grid__col {
-      margin-left: 0;
-      margin-right: 0;
-      width: auto; } }
   @media (max-width: 900px) and (min-width: 480px) {
     .grid__col[class*="grid__col--m-"] {
       display: inline-block;
@@ -728,7 +723,7 @@ a{
 	transition: all 0.3s ease;
 }
 .instrHeading {
-	font-weight: bold;
+	font-family: 'GothamBold';
 	text-align: center;
 	position: absolute;
 	font-size: 75px;
@@ -789,11 +784,6 @@ a{
 	color: #CFF1F4 !important;
 	transform: translate(-50%, 0) scale(1.05) !important;
 }
-/*.adamDesc:hover {
-	opacity: 0.98;
-	top: 372px;
-	transition-delay: 0s;
-}*/
 .kim:hover {
 	transform: scale(1.08) !important;
 }
@@ -1130,13 +1120,14 @@ input:focus {
 .sixDesc {
 	padding-bottom: 30px;
 }
-
-
-
-
 iframe{
   width: 100%;
 }
+
+
+
+
+
 /* font faces & media queries */
 
 @font-face {
@@ -1278,10 +1269,7 @@ iframe{
     top: 0;
     background-color: rgba(0,0,0,.6);
   }
-
-
 }
-
 
 @media (max-width: 585px){
   .alumni-face{
@@ -1333,7 +1321,7 @@ iframe{
 
 @media (max-width: 1400px) {
 	.instrSect {
-		height: 825px;
+		height: 815px;
 	}
 	.instrHeading {
 		top: 15px;
@@ -1450,4 +1438,258 @@ iframe{
   .curriculum{
     padding-top: 40px;
   }
+}
+@media (max-width: 450px) {
+	.blue-link{
+	  font-size: 15px;
+	}
+}
+@media (max-width: 1200px) {
+	.footlogo {
+		width: 120px;
+		height: 120px;
+		left: 5%;
+	}
+}
+@media (max-width: 980px) {
+	.footlogo {
+		width: 90px;
+		height: 90px;
+	}
+}
+@media (max-width: 1100px) {
+	.kim {
+		left: 1%;
+		top: 235px;
+	}
+	.kimTitle {
+		top: 455px;
+		left: 4%;
+	}
+	.kimDesc {
+		left: 0.8%;
+		top: 457px;
+		width: 220px;
+	}
+	.kendall {
+		right: 1%;
+		top: 235px;
+	}
+	.kendallTitle {
+		top: 455px;
+		right: 0.9%;
+	}
+	.kendallDesc {
+		right: 0.5%;
+		top: 457px;
+		width: 220px;
+	}
+	.adamDesc:hover {
+		opacity: 0.98;
+		top: 553px;
+		transition-delay: 0s;
+		transform: translate(-50%, 0) scale(1.02);
+	}
+	.kimDesc:hover {
+		opacity: 0.98;
+		top: 530px;
+		transition-delay: 0s;
+		transform: scale(1.02);
+	}
+	.kendallDesc:hover {
+		opacity: 0.98;
+		top: 530px;
+		transition-delay: 0s;
+		transform: scale(1.02);
+	}
+	.adam:hover {
+		transform: translate(-50%, 0) scale(1.04) !important;
+	}
+	.kim:hover {
+		transform: scale(1.04) !important;
+	}
+	.kendall:hover {
+		transform: scale(1.04) !important;
+	}
+}
+@media (max-width: 810px) {
+	.instrSect {
+		height: 1975px;
+	}
+	.instrHeading {
+		font-size: 70px;
+	}
+	.kim {
+		left: 50% !important;
+		margin-right: -50% !important;
+		transform: translate(-50%, 0) !important;
+		top: 840px;
+	}
+	.kendall {
+		left: 50% !important;
+		margin-right: -50% !important;
+		transform: translate(-50%, 0) !important;
+		top: 1415px;
+	}
+	.adamTitle {
+		top: 473px;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, 0);
+	}
+	.kimTitle {
+		top: 1055px;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, 0) !important;
+	}
+	.kendallTitle {
+		width: 100%;
+		top: 1635px;
+		left: 50%;
+		transform: translate(-50%, 0) !important;
+		text-align: center;
+		float: none;
+	}
+	.adamDesc {
+		opacity: 1;
+		top: 553px;
+		border: 1px solid white;
+		width: 330px;
+		height: 220px;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, 0);
+	}
+	.kimDesc {
+		top: 1135px;
+		opacity: 1;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, 0);
+	}
+	.kendallDesc {
+		top: 1715px;
+		opacity: 1;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, 0);
+	}
+	.adam:hover {
+		transform: translate(-50%, 0) scale(1) !important;
+	}
+	.adam:hover ~ .adamDesc {
+		opacity: 0.98;
+		top: 553px;
+	}
+	.adam:hover ~ .adamTitle {
+		top: 473px !important;
+		color: #A1CAF1 !important;
+		transform: translate(-50%, 0) scale(1) !important;
+	}
+	.adamDesc:hover {
+		opacity: 0.98;
+		top: 553px;
+		transition-delay: 0s;
+		transform: translate(-50%, 0) scale(1);
+	}
+	.kim:hover {
+		transform: translate(-50%, 0) scale(1) !important;
+	}
+	.kim:hover ~ .kimDesc {
+		opacity: 0.98;
+		top: 1135px;
+		left: 50% !important;
+		margin-right: -50%;
+		transform: translate(-50%, 0) !important;
+	}
+	.kim:hover ~ .kimTitle {
+		top: 1055px !important;
+		color: #A1CAF1 !important;
+		transform: translate(-50%, 0) scale(1) !important;
+	}
+	.kimDesc:hover {
+		opacity: 0.98;
+		top: 1135px;
+		transform: translate(-50%, 0);
+	}
+	.kendall:hover {
+		transform: translate(-50%, 0) scale(1) !important;
+	}
+	.kendall:hover ~ .kendallDesc {
+		opacity: 0.98;
+		top: 1715px;
+		left: 50% !important;
+		margin-right: -50%;
+		transform: translate(-50%, 0) !important;
+	}
+	.kendall:hover ~ .kendallTitle {
+		top: 1635px !important;
+		color: #A1CAF1 !important;
+		transform: translate(-50%, 0) scale(1) !important;
+	}
+	.kendallDesc:hover {
+		opacity: 0.98;
+		top: 1715px;
+		transform: translate(-50%, 0);
+	}
+}
+@media (max-width: 900px) {
+    .grid__col {
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;]
+  	}
+  	.footLeft {
+  		margin-bottom: 5px;
+  		border-bottom: 1px solid black;
+  		border-right: none;
+  	}
+  	.footlogo {
+  		width: 200px;
+  		height: 200px;
+  		transform: translate(0, 5px);
+  	}
+  	.footRight {
+  		padding-bottom: 20px;
+  	}
+}
+@media (max-width: 650px) {
+	.footlogo {
+		width: 170px;
+		height: 170px;
+		transform: translate(0, 20px);
+	}
+}
+@media (max-width: 1200px) {
+	.lHeader, .rHeader {
+		font-size: 28px;
+	}
+}
+@media (max-width: 955px) {
+	.lHeader, .rHeader {
+		font-size: 26px;
+	}
+}
+@media (max-width: 900px) {
+	.lHeader, .rHeader {
+		font-size: 30px;
+	}
+}
+@media (max-width: 580px) {
+	.footlogo {
+		width: 93px;
+		height: 90px;
+		transform: translate(0, 40px);
+		left: 5%;
+	}
+	.lHeader, .rHeader {
+		font-size: 25px;
+	}
+	.footText {
+		font-size: 14px;
+	}
+	.footLeft {
+		height: 400px;
+	}
 }
