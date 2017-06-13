@@ -1743,6 +1743,7 @@ iframe{
 	.footLeft {
 		height: 400px;
 	}
+<<<<<<< HEAD
 	.lform {
 		width: 80%;
 	}
@@ -1750,4 +1751,12 @@ iframe{
 		left: 63%;
 		width: 285px;
 	}
+=======
+}
+
+@media (max-width: 442px){
+  .alumni-name{
+    width: 100%;
+  }
+>>>>>>> edits
 }
