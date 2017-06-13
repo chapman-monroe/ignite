@@ -839,6 +839,7 @@ a{
 	font-size: 20px;
 }
 .footer {
+	width: 99.9%;
 	background-color: white;
 	height: 370px;
 	color: black;
@@ -1695,7 +1696,7 @@ iframe{
 		width: 93px;
 		height: 90px;
 		transform: translate(0, 40px);
-		left: 5%;
+		left: 3%;
 	}
 	.lHeader, .rHeader {
 		font-size: 25px;
@@ -1705,5 +1706,12 @@ iframe{
 	}
 	.footLeft {
 		height: 400px;
+	}
+	.lform {
+		width: 80%;
+	}
+	.rform {
+		left: 63%;
+		width: 285px;
 	}
 }
