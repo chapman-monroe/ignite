@@ -1182,6 +1182,15 @@ iframe{
 	h1, h3 {
 		text-align: center;
 	}
+
+  .row-item{
+    padding-right: 0;
+  }
+
+  .alumni-face{
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
 	.tabs {
 		display: none;
 	}
