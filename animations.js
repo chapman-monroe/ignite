@@ -57,6 +57,10 @@ $(document).ready(function(){
 	    				$(".applybtn").css("padding", "10px 20px");
 	    				$(".applybtn").css("margin", "10px 10px 10px 0");
                         $(".text").css("font-size", "15px");
+                        $(".in-use").css("font-size", "15px");
+                        $(".in-use").css("padding", "10px 20px");
+                        $(".in-use").css("margin", "10px 10px 10px 0");
+                        $(".text-inuse").css("font-size", "15px");
     				}
                     if(wn > 950) {
                         $(".adam").css("opacity", "1");
@@ -98,6 +102,9 @@ $(document).ready(function(){
 	    				$(".applybtn").css("padding", "9px 35px");
 	    				$(".applybtn").css("margin", "20px 15px 20px 0");
                         $(".text").css("font-size", "20px");
+                        $(".in-use").css("padding", "9px 35px");
+                        $(".in-use").css("margin", "20px 15px 20px 0");
+                        $(".text-inuse").css("font-size", "20px");
  					}
     			}
       		});
