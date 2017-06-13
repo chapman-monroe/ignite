@@ -1174,6 +1174,15 @@ iframe{
 	h1, h3 {
 		text-align: center;
 	}
+
+  .row-item{
+    padding-right: 0;
+  }
+
+  .alumni-face{
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
 	.tabs {
 		display: none;
 	}
@@ -1227,7 +1236,12 @@ iframe{
   .row-image{
     display: block;
     margin-bottom: 45px;
-    font-family: 'GothamLight';
+    font-family: 'GothamBold';
+    height: 350px;
+  }
+
+  span.text-content{
+    height: 350px;
   }
   .one-a{
     margin-top: 45px;
@@ -1236,14 +1250,10 @@ iframe{
     top: -22px;
   }
 
-  .alumni-image{
-    width: 100%;
-    padding-top: 30px;
-    border: none;
-  }
-
   .icon-holder{
     width: 100%;
+    text-align: center;
+    display: block;
   }
 
   .jade-hidden{
@@ -1262,10 +1272,7 @@ iframe{
     text-align: center;
   }
 
-  .alumni-image{
-    padding-left: 0;
-  }
-  .carousel{
+  .carousel{s
     margin: 0 auto;
   }
 }
@@ -1277,7 +1284,6 @@ iframe{
 
   span.text-content {
     position: absolute;
-    height: 200px;
     opacity: 1;
     width: 100%;
     left: 0;
@@ -1306,6 +1312,14 @@ iframe{
 
   .row-item{
     padding-top: 10px;
+  }
+
+  .row-image{
+    height: 250px;
+  }
+
+  span.text-content{
+    height: 250px;
   }
 }
 
@@ -1653,8 +1667,17 @@ iframe{
     .grid__col {
       margin-left: 0;
       margin-right: 0;
-      width: auto;]
+      width: auto;
   	}
+
+    .alumni-image{
+      padding-left: 0;
+      width: 100%;
+      padding-top: 30px;
+    }
+    .carousel{
+      margin: 0 auto;
+    }
   	.footLeft {
   		margin-bottom: 5px;
   		border-bottom: 1px solid black;
