@@ -44,7 +44,7 @@ $(document).ready(function(){
     					$(".dropbtn").css("height", "20px");
     					$(".dropbtn").css("padding", "0");
     					$(".dropbtn").css("margin-right", "40%");
-    					$(".content").css("top", "49px");
+    					$(".content").css("top", "48px");
     				}
     				else {
 	    				$(".logo").css("width", "48px");
