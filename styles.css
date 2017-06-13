@@ -1594,14 +1594,14 @@ iframe{
 		top: 553px;
 		border: 1px solid white;
 		width: 290px;
-		height: 220px;
+		height: 223px;
 		left: 50%;
 		margin-right: -50%;
 		transform: translate(-50%, 0);
 	}
 	.kimDesc {
 		width: 245px;
-		height: 192px;
+		height: 195px;
 		top: 1135px;
 		opacity: 1;
 		left: 50%;
@@ -1610,7 +1610,7 @@ iframe{
 	}
 	.kendallDesc {
 		width: 245px;
-		height: 196px;
+		height: 199px;
 		top: 1700px;
 		opacity: 1;
 		left: 50%;
