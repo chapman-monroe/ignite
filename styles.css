@@ -650,6 +650,12 @@ a{
 .blue-link{
   text-transform: uppercase;
   color: #3187C8;
+  font-size: 18px;
+  font-family: 'GothamLight';
+}
+
+.blue-link:hover{
+  transform: scale(1.08);
 }
 .events{
   padding-bottom: 50px;
@@ -1140,7 +1146,9 @@ iframe{
 }
 
 
-
+.apply-link-link:hover{
+  transform:scale(1.08);
+}
 
 
 /* font faces & media queries */
